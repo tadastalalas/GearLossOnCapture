@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="장비 세트" />
 		<string id="GLOC_Victims" text="장비를 잃는 대상" />
 		<string id="GLOC_Captors" text="포획자 규칙" />
-		<string id="GLOC_Chance" text="장비 상실 확률" />
-		<string id="GLOC_Chance_H" text="포로가 된 영웅이 장비를 잃을 확률. 포획마다 한 번 판정됩니다. 기본값: 80%" />
-		<string id="GLOC_SlotChance" text="아이템별 상실 확률" />
-		<string id="GLOC_SlotChance_H" text="기본 판정에 성공하면 착용 중인 각 아이템을 개별적으로 판정합니다. 100%면 모두 빼앗깁니다. 기본값: 80%" />
+		<string id="GLOC_Chance" text="방어구 상실 확률" />
+		<string id="GLOC_Chance_H" text="무기, 깃발, 말, 마갑은 항상 빼앗깁니다. 이 값은 포획자가 방어구까지 빼앗을 확률입니다. 포획마다 한 번 판정됩니다. 기본값: 80%" />
+		<string id="GLOC_SlotChance" text="다음 방어구 확률" />
+		<string id="GLOC_SlotChance_H" text="방어구는 투구, 장갑, 망토, 마지막으로 몸 방어구와 신발을 함께 순서대로 빼앗깁니다. 단계마다 판정하며 처음 실패한 판정에서 벗기기가 멈춥니다. 100%면 모두 빼앗깁니다. 기본값: 80%" />
 		<string id="GLOC_MinItemValue" text="최소 아이템 가치" />
-		<string id="GLOC_MinItemValue_H" text="이 가치보다 낮은 아이템은 절대 빼앗기지 않습니다. 0이면 필터가 비활성화됩니다. 기본값: 200" />
+		<string id="GLOC_MinItemValue_H" text="이 가치보다 낮은 방어구는 절대 빼앗기지 않습니다. 무기, 깃발, 말, 마갑은 가치와 상관없이 빼앗깁니다. 0이면 필터가 비활성화됩니다. 기본값: 200" />
 		<string id="GLOC_ReequipOnRelease" text="석방 시 재장비" />
 		<string id="GLOC_ReequipOnRelease_H" text="누더기를 입은 채 석방된 영웅은 게임이 생성한 새 장비 세트를 받습니다. 기본값: 켜짐" />
 		<string id="GLOC_LoseBattle" text="전투 장비" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="플레이어의 대상단을 이끄는 동료가 장비를 잃을 수 있습니다. 기본값: 켜짐" />
 		<string id="GLOC_PlayerCaptorTakes" text="플레이어가 포획자로서 장비 획득" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="플레이어가 영웅을 포로로 잡으면 그 장비를 빼앗아 플레이어 인벤토리에 추가합니다. 기본값: 켜짐" />
-		<string id="GLOC_BanditsAlways" text="산적은 항상 장비를 빼앗음" />
-		<string id="GLOC_BanditsAlways_H" text="산적 포획자는 확률 판정을 무시하고 항상 장비를 빼앗습니다. 기본값: 켜짐" />
-		<string id="GLOC_HonorableSpares" text="명예로운 포획자는 장비를 남겨둠" />
-		<string id="GLOC_HonorableSpares_H" text="명예 특성이 양수인 포획 부대의 지도자는 장비를 절대 빼앗지 않습니다. 기본값: 켜짐" />
-		<string id="GLOC_MercifulSpares" text="자비로운 포획자는 장비를 남겨둠" />
-		<string id="GLOC_MercifulSpares_H" text="자비 특성이 양수인 포획 부대의 지도자는 장비를 절대 빼앗지 않습니다. 기본값: 켜짐" />
-		<string id="GLOC_DishonorableAlways" text="불명예스러운 포획자는 항상 장비를 빼앗음" />
-		<string id="GLOC_DishonorableAlways_H" text="명예 특성이 음수인 포획 부대의 지도자는 확률 판정을 무시하고 항상 장비를 빼앗습니다. 기본값: 켜짐" />
-		<string id="GLOC_RelationSpares" text="우호적인 포획자는 장비를 남겨둠" />
-		<string id="GLOC_RelationSpares_H" text="관계도가 기준치 이상인 포획 부대의 지도자는 장비를 절대 빼앗지 않습니다. 기본값: 켜짐" />
+		<string id="GLOC_BanditsAlways" text="산적은 항상 방어구를 빼앗음" />
+		<string id="GLOC_BanditsAlways_H" text="산적 포획자는 방어구 상실 확률 판정을 무시합니다. 기본값: 켜짐" />
+		<string id="GLOC_HonorableSpares" text="명예로운 포획자는 방어구를 남겨둠" />
+		<string id="GLOC_HonorableSpares_H" text="명예 특성이 양수인 포획 부대의 지도자는 방어구를 절대 빼앗지 않습니다. 무기와 말은 여전히 빼앗깁니다. 기본값: 켜짐" />
+		<string id="GLOC_MercifulSpares" text="자비로운 포획자는 방어구를 남겨둠" />
+		<string id="GLOC_MercifulSpares_H" text="자비 특성이 양수인 포획 부대의 지도자는 방어구를 절대 빼앗지 않습니다. 무기와 말은 여전히 빼앗깁니다. 기본값: 켜짐" />
+		<string id="GLOC_DishonorableAlways" text="불명예스러운 포획자는 항상 방어구를 빼앗음" />
+		<string id="GLOC_DishonorableAlways_H" text="명예 특성이 음수인 포획 부대의 지도자는 방어구 상실 확률 판정을 무시합니다. 기본값: 켜짐" />
+		<string id="GLOC_RelationSpares" text="우호적인 포획자는 방어구를 남겨둠" />
+		<string id="GLOC_RelationSpares_H" text="관계도가 기준치 이상인 포획 부대의 지도자는 방어구를 절대 빼앗지 않습니다. 무기와 말은 여전히 빼앗깁니다. 기본값: 켜짐" />
 		<string id="GLOC_SpareRelation" text="우호 관계 기준치" />
 		<string id="GLOC_SpareRelation_H" text="포획자가 우호적으로 간주되는 관계도 값. 기본값: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="처형 후 모든 장비 획득" />

@@ -10,10 +10,25 @@ using TaleWorlds.CampaignSystem.Roster;
 
 namespace GearLossOnCapture.Behaviors;
 
-// GLOC-FEATURE: Captured heroes lose gear to their captor, heroes released in rags get new gear, executed heroes' gear goes to the executioner | gate: always (each part has its own setting)
+// GLOC-FEATURE: Captured heroes always lose weapons and horse, then armor in a fixed order, to their captor; heroes released in rags get new gear; executed heroes' gear goes to the executioner | gate: always (each part has its own setting)
 internal sealed class GearLossBehavior : CampaignBehaviorBase
 {
     private const string RagsId = "tattered_rags";
+
+    private static readonly EquipmentIndex[] AlwaysTaken =
+    {
+        EquipmentIndex.Weapon0, EquipmentIndex.Weapon1, EquipmentIndex.Weapon2, EquipmentIndex.Weapon3,
+        EquipmentIndex.ExtraWeaponSlot, EquipmentIndex.Horse, EquipmentIndex.HorseHarness,
+    };
+
+    // Stripping order. Body armor and boots are one step.
+    private static readonly EquipmentIndex[][] ArmorSteps =
+    {
+        new[] { EquipmentIndex.Head },
+        new[] { EquipmentIndex.Gloves },
+        new[] { EquipmentIndex.Cape },
+        new[] { EquipmentIndex.Body, EquipmentIndex.Leg },
+    };
 
     public override void RegisterEvents()
     {
@@ -28,14 +43,19 @@ internal sealed class GearLossBehavior : CampaignBehaviorBase
     {
         if (hero == null || captor == null || !Applies(hero)) return;
 
-        bool takes = CaptorTakes(captor, hero);
-        GlocLog.Debug($"{hero.Name} captured by {captor.Name}: gear {(takes ? "taken" : "spared")}.");
-        if (!takes) return;
+        if (IsPlayerCaptor(captor) && !ModSettings.PlayerCaptorTakes)
+        {
+            GlocLog.Debug($"{hero.Name} captured by {captor.Name}: gear spared (player captor takes nothing).");
+            return;
+        }
+
+        bool takesArmor = CaptorTakesArmor(captor, hero);
+        GlocLog.Debug($"{hero.Name} captured by {captor.Name}: weapons taken, armor {(takesArmor ? "taken" : "spared")}.");
 
         int taken = 0;
-        if (ModSettings.LoseBattle) taken += Strip(hero.BattleEquipment, captor);
-        if (ModSettings.LoseCivilian) taken += Strip(hero.CivilianEquipment, captor);
-        if (ModSettings.LoseStealth) taken += Strip(hero.StealthEquipment, captor);
+        if (ModSettings.LoseBattle) taken += Strip(hero.BattleEquipment, captor, takesArmor);
+        if (ModSettings.LoseCivilian) taken += Strip(hero.CivilianEquipment, captor, takesArmor);
+        if (ModSettings.LoseStealth) taken += Strip(hero.StealthEquipment, captor, takesArmor);
         GlocLog.Debug($"{taken} item(s) taken from {hero.Name}.");
     }
 
@@ -89,9 +109,11 @@ internal sealed class GearLossBehavior : CampaignBehaviorBase
         return hero.PartyBelongedTo?.IsCaravan == true ? ModSettings.PlayerCaravanMasters : ModSettings.PlayerClan;
     }
 
-    private static bool CaptorTakes(PartyBase captor, Hero hero)
+    private static bool IsPlayerCaptor(PartyBase captor) => captor == PartyBase.MainParty || captor.LeaderHero == Hero.MainHero;
+
+    private static bool CaptorTakesArmor(PartyBase captor, Hero hero)
     {
-        if (captor == PartyBase.MainParty || captor.LeaderHero == Hero.MainHero) return ModSettings.PlayerCaptorTakes && MBRandom.RandomFloat < ModSettings.Chance;
+        if (IsPlayerCaptor(captor)) return MBRandom.RandomFloat < ModSettings.Chance;
         if (ModSettings.BanditsAlways && captor.MapFaction?.IsBanditFaction == true) return true;
 
         Hero leader = captor.LeaderHero;
@@ -107,28 +129,53 @@ internal sealed class GearLossBehavior : CampaignBehaviorBase
         return MBRandom.RandomFloat < ModSettings.Chance;
     }
 
-    private static int Strip(Equipment eq, PartyBase captor)
+    // Weapons, banner, horse and harness always go. Armor goes step by step in ArmorSteps order;
+    // a step with nothing worth taking is skipped without a roll, the first failed roll stops the stripping.
+    private static int Strip(Equipment eq, PartyBase captor, bool takesArmor)
     {
-        if (eq == null || InRags(eq)) return 0;
+        if (eq == null) return 0;
+
+        int taken = 0;
+        foreach (EquipmentIndex slot in AlwaysTaken) taken += Take(eq, slot, captor, 0);
+        if (!takesArmor) return taken;
 
         int minItemValue = ModSettings.MinItemValue;
-        float slotChance = ModSettings.SlotChance;
-        int taken = 0;
-        for (int i = 0; i < (int)EquipmentIndex.NumEquipmentSetSlots; i++)
+        float stepChance = ModSettings.SlotChance;
+        int step = 0;
+        for (; step < ArmorSteps.Length; step++)
         {
-            ItemObject item = eq[i].Item;
-            if (item == null || item.Value < minItemValue || MBRandom.RandomFloat >= slotChance) continue;
-
-            captor.ItemRoster?.AddToCounts(eq[i], 1);
-            eq[i] = EquipmentElement.Invalid;
-            taken++;
+            if (!HasTakeable(eq, ArmorSteps[step], minItemValue)) continue;
+            if (MBRandom.RandomFloat >= stepChance) break;
+            foreach (EquipmentIndex slot in ArmorSteps[step]) taken += Take(eq, slot, captor, minItemValue);
         }
 
-        if (taken == 0 || eq[EquipmentIndex.Body].Item != null) return taken;
+        // Rags only once the body step was reached and left the hero without body armor.
+        if (step < ArmorSteps.Length || eq[EquipmentIndex.Body].Item != null) return taken;
         ItemObject rags = MBObjectManager.Instance.GetObject<ItemObject>(RagsId);
         if (rags != null) eq[EquipmentIndex.Body] = new EquipmentElement(rags);
         else GlocLog.Warn($"Item '{RagsId}' was not found; the stripped hero was left without body armor.");
         return taken;
+    }
+
+    private static bool HasTakeable(Equipment eq, EquipmentIndex[] slots, int minItemValue)
+    {
+        foreach (EquipmentIndex slot in slots)
+        {
+            if (IsTakeable(eq[slot].Item, minItemValue)) return true;
+        }
+
+        return false;
+    }
+
+    private static bool IsTakeable(ItemObject? item, int minItemValue) => item != null && item.StringId != RagsId && item.Value >= minItemValue;
+
+    private static int Take(Equipment eq, EquipmentIndex slot, PartyBase captor, int minItemValue)
+    {
+        if (!IsTakeable(eq[slot].Item, minItemValue)) return 0;
+
+        captor.ItemRoster?.AddToCounts(eq[slot], 1);
+        eq[slot] = EquipmentElement.Invalid;
+        return 1;
     }
 
     private static bool InRags(Equipment eq) => eq?[EquipmentIndex.Body].Item?.StringId == RagsId;

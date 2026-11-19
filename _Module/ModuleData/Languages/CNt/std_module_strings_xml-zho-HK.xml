@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="裝備套組" />
 		<string id="GLOC_Victims" text="誰會失去裝備" />
 		<string id="GLOC_Captors" text="俘獲方規則" />
-		<string id="GLOC_Chance" text="失去裝備機率" />
-		<string id="GLOC_Chance_H" text="被俘英雄失去任何裝備的機率。每次被俘只判定一次。[ 預設：80% ]" />
-		<string id="GLOC_SlotChance" text="單件物品失去機率" />
-		<string id="GLOC_SlotChance_H" text="通過主判定後，每件已裝備的物品會各自單獨判定。100% 則全部剝光。[ 預設：80% ]" />
+		<string id="GLOC_Chance" text="失去護甲機率" />
+		<string id="GLOC_Chance_H" text="武器、旗幟、坐騎與馬具必定被奪走。此為俘獲方同時奪取護甲的機率。每次被俘只判定一次。[ 預設：80% ]" />
+		<string id="GLOC_SlotChance" text="下一件護甲失去機率" />
+		<string id="GLOC_SlotChance_H" text="護甲按以下順序被奪走：頭盔、手套、披風，最後是身甲連同靴子。每一步各自判定，首次判定失敗即停止剝奪。100% 則全部剝光。[ 預設：80% ]" />
 		<string id="GLOC_MinItemValue" text="物品最低價值" />
-		<string id="GLOC_MinItemValue_H" text="價值低於此數值的物品永遠不會被奪走。0 為停用此過濾。[ 預設：200 ]" />
+		<string id="GLOC_MinItemValue_H" text="價值低於此數值的護甲永遠不會被奪走。武器、旗幟、坐騎與馬具不受此限制，照樣被奪走。0 為停用此過濾。[ 預設：200 ]" />
 		<string id="GLOC_ReequipOnRelease" text="獲釋時重新配發裝備" />
 		<string id="GLOC_ReequipOnRelease_H" text="身穿破衣被釋放的英雄，會獲得一套由遊戲原版機制生成的新裝備。[ 預設：啟用 ]" />
 		<string id="GLOC_LoseBattle" text="戰鬥裝備" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="率領玩家商隊的同伴可能失去裝備。[ 預設：啟用 ]" />
 		<string id="GLOC_PlayerCaptorTakes" text="玩家作為俘獲方時奪取裝備" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="玩家俘虜英雄時，會奪走其裝備並放入玩家的物品欄。[ 預設：啟用 ]" />
-		<string id="GLOC_BanditsAlways" text="強盜必定奪取裝備" />
-		<string id="GLOC_BanditsAlways_H" text="身為俘獲方的強盜不受機率判定影響，必定奪取裝備。[ 預設：啟用 ]" />
-		<string id="GLOC_HonorableSpares" text="高尚的俘獲方不奪取裝備" />
-		<string id="GLOC_HonorableSpares_H" text="榮譽特質為正的俘獲方部隊首領絕不奪取裝備。[ 預設：啟用 ]" />
-		<string id="GLOC_MercifulSpares" text="仁慈的俘獲方不奪取裝備" />
-		<string id="GLOC_MercifulSpares_H" text="仁慈特質為正的俘獲方部隊首領絕不奪取裝備。[ 預設：啟用 ]" />
-		<string id="GLOC_DishonorableAlways" text="卑劣的俘獲方必定奪取裝備" />
-		<string id="GLOC_DishonorableAlways_H" text="榮譽特質為負的俘獲方部隊首領不受機率判定影響，必定奪取裝備。[ 預設：啟用 ]" />
-		<string id="GLOC_RelationSpares" text="友好的俘獲方不奪取裝備" />
-		<string id="GLOC_RelationSpares_H" text="與被俘者關係達到或超過門檻的俘獲方部隊首領，絕不奪取裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_BanditsAlways" text="強盜必定奪取護甲" />
+		<string id="GLOC_BanditsAlways_H" text="身為俘獲方的強盜不受失去護甲機率判定影響。[ 預設：啟用 ]" />
+		<string id="GLOC_HonorableSpares" text="高尚的俘獲方不奪取護甲" />
+		<string id="GLOC_HonorableSpares_H" text="榮譽特質為正的俘獲方部隊首領絕不奪取護甲，但仍會奪走武器與坐騎。[ 預設：啟用 ]" />
+		<string id="GLOC_MercifulSpares" text="仁慈的俘獲方不奪取護甲" />
+		<string id="GLOC_MercifulSpares_H" text="仁慈特質為正的俘獲方部隊首領絕不奪取護甲，但仍會奪走武器與坐騎。[ 預設：啟用 ]" />
+		<string id="GLOC_DishonorableAlways" text="卑劣的俘獲方必定奪取護甲" />
+		<string id="GLOC_DishonorableAlways_H" text="榮譽特質為負的俘獲方部隊首領不受失去護甲機率判定影響。[ 預設：啟用 ]" />
+		<string id="GLOC_RelationSpares" text="友好的俘獲方不奪取護甲" />
+		<string id="GLOC_RelationSpares_H" text="與被俘者關係達到或超過門檻的俘獲方部隊首領，絕不奪取護甲，但仍會奪走武器與坐騎。[ 預設：啟用 ]" />
 		<string id="GLOC_SpareRelation" text="友好關係門檻" />
 		<string id="GLOC_SpareRelation_H" text="關係值達到多少時，俘獲方才算友好。[ 預設：10 ]" />
 		<string id="GLOC_ExecutionTakesAll" text="處決後奪取全部裝備" />

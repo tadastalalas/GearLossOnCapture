@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="装備セット" />
 		<string id="GLOC_Victims" text="装備を失う対象" />
 		<string id="GLOC_Captors" text="捕縛者のルール" />
-		<string id="GLOC_Chance" text="装備喪失の確率" />
-		<string id="GLOC_Chance_H" text="捕らえられた英雄が装備を失う確率。捕縛ごとに1回判定されます。デフォルト: 80%" />
-		<string id="GLOC_SlotChance" text="アイテムごとの喪失確率" />
-		<string id="GLOC_SlotChance_H" text="メイン判定に成功した後、装備中の各アイテムが個別に判定されます。100%ですべて奪われます。デフォルト: 80%" />
+		<string id="GLOC_Chance" text="防具喪失の確率" />
+		<string id="GLOC_Chance_H" text="武器、旗、馬、馬鎧は常に奪われます。これは捕縛者が防具も奪う確率です。捕縛ごとに1回判定されます。デフォルト: 80%" />
+		<string id="GLOC_SlotChance" text="次の防具の確率" />
+		<string id="GLOC_SlotChance_H" text="防具は兜、手袋、マント、最後に胴鎧とブーツを一緒に、の順で奪われます。段階ごとに判定され、最初に判定に失敗した時点で剥ぎ取りが止まります。100%ですべて奪われます。デフォルト: 80%" />
 		<string id="GLOC_MinItemValue" text="アイテムの最低価値" />
-		<string id="GLOC_MinItemValue_H" text="この価値未満のアイテムは奪われません。0でフィルターを無効化します。デフォルト: 200" />
+		<string id="GLOC_MinItemValue_H" text="この価値未満の防具は奪われません。武器、旗、馬、馬鎧は価値に関係なく奪われます。0でフィルターを無効化します。デフォルト: 200" />
 		<string id="GLOC_ReequipOnRelease" text="解放時に再装備" />
 		<string id="GLOC_ReequipOnRelease_H" text="ぼろ布を着たまま解放された英雄は、ゲームが生成した新しい装備セットを受け取ります。デフォルト: 有効" />
 		<string id="GLOC_LoseBattle" text="戦闘装備" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="プレイヤーの隊商を率いる仲間が装備を失う可能性があります。デフォルト: 有効" />
 		<string id="GLOC_PlayerCaptorTakes" text="プレイヤーが捕縛者として装備を奪う" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="プレイヤーが英雄を捕らえた際、その装備が奪われプレイヤーの所持品に追加されます。デフォルト: 有効" />
-		<string id="GLOC_BanditsAlways" text="盗賊は常に装備を奪う" />
-		<string id="GLOC_BanditsAlways_H" text="盗賊の捕縛者は確率判定を無視して常に装備を奪います。デフォルト: 有効" />
-		<string id="GLOC_HonorableSpares" text="高潔な捕縛者は装備を奪わない" />
-		<string id="GLOC_HonorableSpares_H" text="名誉の特性が正の捕縛者パーティーのリーダーは装備を決して奪いません。デフォルト: 有効" />
-		<string id="GLOC_MercifulSpares" text="慈悲深い捕縛者は装備を奪わない" />
-		<string id="GLOC_MercifulSpares_H" text="慈悲の特性が正の捕縛者パーティーのリーダーは装備を決して奪いません。デフォルト: 有効" />
-		<string id="GLOC_DishonorableAlways" text="不名誉な捕縛者は常に装備を奪う" />
-		<string id="GLOC_DishonorableAlways_H" text="名誉の特性が負の捕縛者パーティーのリーダーは確率判定を無視して常に装備を奪います。デフォルト: 有効" />
-		<string id="GLOC_RelationSpares" text="友好的な捕縛者は装備を奪わない" />
-		<string id="GLOC_RelationSpares_H" text="関係値がしきい値以上の捕縛者パーティーのリーダーは装備を決して奪いません。デフォルト: 有効" />
+		<string id="GLOC_BanditsAlways" text="盗賊は常に防具を奪う" />
+		<string id="GLOC_BanditsAlways_H" text="盗賊の捕縛者は防具喪失の確率判定を無視します。デフォルト: 有効" />
+		<string id="GLOC_HonorableSpares" text="名誉ある捕縛者は防具を奪わない" />
+		<string id="GLOC_HonorableSpares_H" text="名誉の特性が正の捕縛者パーティーのリーダーは防具を決して奪いません。武器と馬は奪われます。デフォルト: 有効" />
+		<string id="GLOC_MercifulSpares" text="慈悲深い捕縛者は防具を奪わない" />
+		<string id="GLOC_MercifulSpares_H" text="慈悲の特性が正の捕縛者パーティーのリーダーは防具を決して奪いません。武器と馬は奪われます。デフォルト: 有効" />
+		<string id="GLOC_DishonorableAlways" text="不名誉な捕縛者は常に防具を奪う" />
+		<string id="GLOC_DishonorableAlways_H" text="名誉の特性が負の捕縛者パーティーのリーダーは防具喪失の確率判定を無視します。デフォルト: 有効" />
+		<string id="GLOC_RelationSpares" text="友好的な捕縛者は防具を奪わない" />
+		<string id="GLOC_RelationSpares_H" text="関係値がしきい値以上の捕縛者パーティーのリーダーは防具を決して奪いません。武器と馬は奪われます。デフォルト: 有効" />
 		<string id="GLOC_SpareRelation" text="友好関係のしきい値" />
 		<string id="GLOC_SpareRelation_H" text="捕縛者が友好的と見なされる関係値。デフォルト: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="処刑後に全装備を奪う" />

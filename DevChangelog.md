@@ -1,3 +1,16 @@
+## GLOC v1.5.7.1
+
+- Ordered stripping replaces the per-slot random roll (a hero could lose only the leg slot).
+  - `GearLossBehavior.Strip(eq, captor, takesArmor)`: `AlwaysTaken` (`Weapon0`–`Weapon3`, `ExtraWeaponSlot`, `Horse`, `HorseHarness`) is always taken, with no value filter. `ArmorSteps` = `Head` → `Gloves` → `Cape` → `Body`+`Leg` (one step). Each step is rolled against `SlotChance` and the first failure stops it. Steps with nothing takeable (empty, `tattered_rags`, below `MinItemValue`) are skipped without a roll.
+  - Rags go on only when the loop reaches the end (the body step was passed or skipped) and `Body` is empty. Removed the early `InRags` return, so a re-armed hero in rags is disarmed again. Rags are never taken.
+  - `CaptorTakes` → `CaptorTakesArmor` (same roll order); new `IsPlayerCaptor`. `PlayerCaptorTakes` off → the player's prisoners keep everything (checked first). The spare rules (`HonorableSpares`, `MercifulSpares`, `RelationSpares`) and `Chance` now decide armor only. `BanditsAlways`/`DishonorableAlways` skip the `Chance` roll, but the step rolls still apply.
+  - `ReequipOnRelease` unchanged (rags only; default true). Heroes who lost only weapons are not re-equipped.
+  - Debug log: "weapons taken, armor taken/spared"; separate line when the player captor takes nothing.
+- Texts: English changed for existing ids (kept, not renamed) in `Core\Texts.cs` and all 13 files: `GLOC_Chance`(+`_H`), `GLOC_SlotChance`(+`_H`), `GLOC_MinItemValue_H`, `GLOC_BanditsAlways`(+`_H`), `GLOC_HonorableSpares`(+`_H`), `GLOC_MercifulSpares`(+`_H`), `GLOC_DishonorableAlways`(+`_H`), `GLOC_RelationSpares`(+`_H`). CNs/CNt rewritten in Cartoonist57's "[ 预设：X ]" / "[ 預設：X ]" style. Should be reviewed by him.
+- Settings: no key, default or range changed; MCM and xml values carry over (`Chance`/`SlotChance` keep their keys with the new meaning).
+- Save compatibility: none (SyncData empty).
+- Test: capture by an honorable lord (weapons/horse only), bandit (armor steps run), player captor on/off; hero with no cape/helmet (steps skipped); `SlotChance` 100% → rags; already in rags and re-armed → weapons taken, rags kept.
+
 ## GLOC v1.5.7.0
 
 - Migrated from the legacy build (net472;net6 + game HintPaths, version 1.1.0) to `Bannerlord.BuildResourcesLite.Sdk` + `Bannerlord.ModuleLoader.Injector`: one DLL per game version (`GearLossOnCapture.v<ver>.dll`), netstandard2.0. Versions from `..\supported-game-versions.txt`: 1.5.7, 1.4.8, 1.4.7.

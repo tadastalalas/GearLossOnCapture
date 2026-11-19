@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="Teçhizat Setleri" />
 		<string id="GLOC_Victims" text="Kim Teçhizat Kaybeder" />
 		<string id="GLOC_Captors" text="Esir Alan Kuralları" />
-		<string id="GLOC_Chance" text="Teçhizat Kaybetme Şansı" />
-		<string id="GLOC_Chance_H" text="Esir alınan bir kahramanın herhangi bir teçhizat kaybetme şansı. Her esir alımında bir kez zar atılır. Varsayılan: 80%" />
-		<string id="GLOC_SlotChance" text="Eşya Başına Kayıp Şansı" />
-		<string id="GLOC_SlotChance_H" text="Ana zar başarılı olursa, kuşanılan her eşya için ayrı zar atılır. 100% her şeyi alır. Varsayılan: 80%" />
+		<string id="GLOC_Chance" text="Zırh Kaybetme Şansı" />
+		<string id="GLOC_Chance_H" text="Silahlar, sancak, at ve at koşumu her zaman alınır. Bu, esir alanın zırhı da alma şansıdır. Her esir alımında bir kez zar atılır. Varsayılan: 80%" />
+		<string id="GLOC_SlotChance" text="Sonraki Zırh Parçası Şansı" />
+		<string id="GLOC_SlotChance_H" text="Zırh şu sırayla alınır: miğfer, eldivenler, pelerin, ardından gövde zırhı çizmelerle birlikte. Her adım için zar atılır ve ilk başarısız zar soymayı durdurur. 100% her şeyi alır. Varsayılan: 80%" />
 		<string id="GLOC_MinItemValue" text="Asgari Eşya Değeri" />
-		<string id="GLOC_MinItemValue_H" text="Bu değerden ucuz eşyalar asla alınmaz. 0 filtreyi devre dışı bırakır. Varsayılan: 200" />
+		<string id="GLOC_MinItemValue_H" text="Bu değerden ucuz zırhlar asla alınmaz. Silahlar, sancak, at ve at koşumu değerinden bağımsız olarak alınır. 0 filtreyi devre dışı bırakır. Varsayılan: 200" />
 		<string id="GLOC_ReequipOnRelease" text="Serbest Kalınca Yeniden Kuşan" />
 		<string id="GLOC_ReequipOnRelease_H" text="Paçavralar içinde serbest bırakılan kahramanlar oyun tarafından üretilen yeni bir teçhizat seti alır. Varsayılan: açık" />
 		<string id="GLOC_LoseBattle" text="Savaş Teçhizatı" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="Oyuncu kervanlarını yöneten yoldaşlar teçhizat kaybedebilir. Varsayılan: açık" />
 		<string id="GLOC_PlayerCaptorTakes" text="Oyuncu Esir Alan Olarak Teçhizatı Alır" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="Oyuncu bir kahramanı esir aldığında teçhizatı alınır ve oyuncu envanterine eklenir. Varsayılan: açık" />
-		<string id="GLOC_BanditsAlways" text="Haydutlar Teçhizatı Her Zaman Alır" />
-		<string id="GLOC_BanditsAlways_H" text="Haydut esir alanlar şans zarını yok sayar ve teçhizatı her zaman alır. Varsayılan: açık" />
-		<string id="GLOC_HonorableSpares" text="Onurlu Esir Alanlar Teçhizata Dokunmaz" />
-		<string id="GLOC_HonorableSpares_H" text="Pozitif Onur özelliğine sahip esir alan birliğin lideri teçhizatı asla almaz. Varsayılan: açık" />
-		<string id="GLOC_MercifulSpares" text="Merhametli Esir Alanlar Teçhizata Dokunmaz" />
-		<string id="GLOC_MercifulSpares_H" text="Pozitif Merhamet özelliğine sahip esir alan birliğin lideri teçhizatı asla almaz. Varsayılan: açık" />
-		<string id="GLOC_DishonorableAlways" text="Onursuz Esir Alanlar Teçhizatı Her Zaman Alır" />
-		<string id="GLOC_DishonorableAlways_H" text="Negatif Onur özelliğine sahip esir alan birliğin lideri şans zarını yok sayar ve teçhizatı her zaman alır. Varsayılan: açık" />
-		<string id="GLOC_RelationSpares" text="Dost Esir Alanlar Teçhizata Dokunmaz" />
-		<string id="GLOC_RelationSpares_H" text="İlişkisi eşiğe eşit veya üzerinde olan esir alan birliğin lideri teçhizatı asla almaz. Varsayılan: açık" />
+		<string id="GLOC_BanditsAlways" text="Haydutlar Zırhı Her Zaman Alır" />
+		<string id="GLOC_BanditsAlways_H" text="Haydut esir alanlar zırh kaybetme şansı zarını yok sayar. Varsayılan: açık" />
+		<string id="GLOC_HonorableSpares" text="Onurlu Esir Alanlar Zırha Dokunmaz" />
+		<string id="GLOC_HonorableSpares_H" text="Pozitif Onur özelliğine sahip esir alan birliğin lideri zırhı asla almaz. Silahlar ve at yine de alınır. Varsayılan: açık" />
+		<string id="GLOC_MercifulSpares" text="Merhametli Esir Alanlar Zırha Dokunmaz" />
+		<string id="GLOC_MercifulSpares_H" text="Pozitif Merhamet özelliğine sahip esir alan birliğin lideri zırhı asla almaz. Silahlar ve at yine de alınır. Varsayılan: açık" />
+		<string id="GLOC_DishonorableAlways" text="Onursuz Esir Alanlar Zırhı Her Zaman Alır" />
+		<string id="GLOC_DishonorableAlways_H" text="Negatif Onur özelliğine sahip esir alan birliğin lideri zırh kaybetme şansı zarını yok sayar. Varsayılan: açık" />
+		<string id="GLOC_RelationSpares" text="Dost Esir Alanlar Zırha Dokunmaz" />
+		<string id="GLOC_RelationSpares_H" text="İlişkisi eşiğe eşit veya üzerinde olan esir alan birliğin lideri zırhı asla almaz. Silahlar ve at yine de alınır. Varsayılan: açık" />
 		<string id="GLOC_SpareRelation" text="Dostluk İlişki Eşiği" />
 		<string id="GLOC_SpareRelation_H" text="Bir esir alanın dost sayılacağı ilişki değeri. Varsayılan: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="İnfazdan Sonra Tüm Ekipmanı Al" />

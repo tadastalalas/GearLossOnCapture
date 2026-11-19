@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="Conjuntos de Equipamento" />
 		<string id="GLOC_Victims" text="Quem Perde Equipamento" />
 		<string id="GLOC_Captors" text="Regras dos Captores" />
-		<string id="GLOC_Chance" text="Chance de Perder Equipamento" />
-		<string id="GLOC_Chance_H" text="Chance de um herói capturado perder algum equipamento. Rolada uma vez por captura. Padrão: 80%" />
-		<string id="GLOC_SlotChance" text="Chance de Perda por Item" />
-		<string id="GLOC_SlotChance_H" text="Se a rolagem principal passar, cada item equipado é rolado separadamente. 100% tira tudo. Padrão: 80%" />
+		<string id="GLOC_Chance" text="Chance de Perder Armadura" />
+		<string id="GLOC_Chance_H" text="Armas, estandarte, cavalo e arreio são sempre tomados. Esta é a chance de o captor também tomar a armadura. Rolada uma vez por captura. Padrão: 80%" />
+		<string id="GLOC_SlotChance" text="Chance da Próxima Peça de Armadura" />
+		<string id="GLOC_SlotChance_H" text="A armadura é tomada nesta ordem: elmo, luvas, capa e, por fim, armadura corporal junto com as botas. Cada etapa é rolada e a primeira rolagem que falhar encerra a pilhagem. 100% tira tudo. Padrão: 80%" />
 		<string id="GLOC_MinItemValue" text="Valor Mínimo do Item" />
-		<string id="GLOC_MinItemValue_H" text="Itens com valor menor que este nunca são tomados. 0 desativa o filtro. Padrão: 200" />
+		<string id="GLOC_MinItemValue_H" text="Armaduras com valor menor que este nunca são tomadas. Armas, estandarte, cavalo e arreio são tomados de qualquer forma. 0 desativa o filtro. Padrão: 200" />
 		<string id="GLOC_ReequipOnRelease" text="Reequipar ao Ser Libertado" />
 		<string id="GLOC_ReequipOnRelease_H" text="Heróis libertados em trapos recebem um novo conjunto de equipamento gerado pelo jogo. Padrão: ativado" />
 		<string id="GLOC_LoseBattle" text="Equipamento de Batalha" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="Companheiros liderando caravanas do jogador podem perder equipamento. Padrão: ativado" />
 		<string id="GLOC_PlayerCaptorTakes" text="Jogador Toma Equipamento Como Captor" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="Quando o jogador captura um herói, o equipamento dele é tomado e adicionado ao inventário do jogador. Padrão: ativado" />
-		<string id="GLOC_BanditsAlways" text="Bandidos Sempre Tomam Equipamento" />
-		<string id="GLOC_BanditsAlways_H" text="Captores bandidos ignoram a rolagem de chance e sempre tomam equipamento. Padrão: ativado" />
-		<string id="GLOC_HonorableSpares" text="Captores Honrados Poupam Equipamento" />
-		<string id="GLOC_HonorableSpares_H" text="Um líder de grupo captor com traço de Honra positivo nunca toma equipamento. Padrão: ativado" />
-		<string id="GLOC_MercifulSpares" text="Captores Misericordiosos Poupam Equipamento" />
-		<string id="GLOC_MercifulSpares_H" text="Um líder de grupo captor com traço de Misericórdia positivo nunca toma equipamento. Padrão: ativado" />
-		<string id="GLOC_DishonorableAlways" text="Captores Desonrados Sempre Tomam Equipamento" />
-		<string id="GLOC_DishonorableAlways_H" text="Um líder de grupo captor com traço de Honra negativo ignora a rolagem de chance e sempre toma equipamento. Padrão: ativado" />
-		<string id="GLOC_RelationSpares" text="Captores Amigáveis Poupam Equipamento" />
-		<string id="GLOC_RelationSpares_H" text="Um líder de grupo captor com relação igual ou acima do limite nunca toma equipamento. Padrão: ativado" />
+		<string id="GLOC_BanditsAlways" text="Bandidos Sempre Tomam Armadura" />
+		<string id="GLOC_BanditsAlways_H" text="Captores bandidos ignoram a rolagem de chance de perder armadura. Padrão: ativado" />
+		<string id="GLOC_HonorableSpares" text="Captores Honrados Poupam Armadura" />
+		<string id="GLOC_HonorableSpares_H" text="Um líder de grupo captor com traço de Honra positivo nunca toma armadura. Armas e cavalo ainda são tomados. Padrão: ativado" />
+		<string id="GLOC_MercifulSpares" text="Captores Misericordiosos Poupam Armadura" />
+		<string id="GLOC_MercifulSpares_H" text="Um líder de grupo captor com traço de Misericórdia positivo nunca toma armadura. Armas e cavalo ainda são tomados. Padrão: ativado" />
+		<string id="GLOC_DishonorableAlways" text="Captores Desonrados Sempre Tomam Armadura" />
+		<string id="GLOC_DishonorableAlways_H" text="Um líder de grupo captor com traço de Honra negativo ignora a rolagem de chance de perder armadura. Padrão: ativado" />
+		<string id="GLOC_RelationSpares" text="Captores Amigáveis Poupam Armadura" />
+		<string id="GLOC_RelationSpares_H" text="Um líder de grupo captor com relação igual ou acima do limite nunca toma armadura. Armas e cavalo ainda são tomados. Padrão: ativado" />
 		<string id="GLOC_SpareRelation" text="Limite de Relação Amigável" />
 		<string id="GLOC_SpareRelation_H" text="Valor de relação a partir do qual um captor é considerado amigável. Padrão: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="Pegar Todo o Equipamento Após Execução" />

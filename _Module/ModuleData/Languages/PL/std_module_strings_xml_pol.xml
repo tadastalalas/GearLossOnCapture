@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="Zestawy ekwipunku" />
 		<string id="GLOC_Victims" text="Kto traci ekwipunek" />
 		<string id="GLOC_Captors" text="Zasady dla porywaczy" />
-		<string id="GLOC_Chance" text="Szansa na utratę ekwipunku" />
-		<string id="GLOC_Chance_H" text="Szansa, że pojmany bohater w ogóle straci ekwipunek. Losowana raz na pojmanie. Domyślnie: 80%" />
-		<string id="GLOC_SlotChance" text="Szansa na utratę pojedynczego przedmiotu" />
-		<string id="GLOC_SlotChance_H" text="Po udanym rzucie głównym każdy założony przedmiot losowany jest osobno. 100% zabiera wszystko. Domyślnie: 80%" />
+		<string id="GLOC_Chance" text="Szansa na utratę zbroi" />
+		<string id="GLOC_Chance_H" text="Broń, sztandar, koń i rząd koński są zabierane zawsze. To jest szansa, że porywacz zabierze też zbroję. Losowana raz na pojmanie. Domyślnie: 80%" />
+		<string id="GLOC_SlotChance" text="Szansa na kolejną część zbroi" />
+		<string id="GLOC_SlotChance_H" text="Zbroja jest zabierana w tej kolejności: hełm, rękawice, peleryna, a na końcu zbroja na tułów razem z butami. Każdy krok jest losowany, a pierwszy nieudany rzut kończy zdzieranie. 100% zabiera wszystko. Domyślnie: 80%" />
 		<string id="GLOC_MinItemValue" text="Minimalna wartość przedmiotu" />
-		<string id="GLOC_MinItemValue_H" text="Przedmioty o niższej wartości nigdy nie są zabierane. 0 wyłącza filtr. Domyślnie: 200" />
+		<string id="GLOC_MinItemValue_H" text="Zbroja o niższej wartości nigdy nie jest zabierana. Broń, sztandar, koń i rząd koński są zabierane niezależnie od wartości. 0 wyłącza filtr. Domyślnie: 200" />
 		<string id="GLOC_ReequipOnRelease" text="Ponowne wyposażenie po uwolnieniu" />
 		<string id="GLOC_ReequipOnRelease_H" text="Bohaterowie uwolnieni w łachmanach otrzymują nowy zestaw ekwipunku wygenerowany przez grę. Domyślnie: włączone" />
 		<string id="GLOC_LoseBattle" text="Ekwipunek bojowy" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="Towarzysze prowadzący karawany gracza mogą stracić ekwipunek. Domyślnie: włączone" />
 		<string id="GLOC_PlayerCaptorTakes" text="Gracz zabiera ekwipunek jako porywacz" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="Gdy gracz pojmie bohatera, jego ekwipunek zostaje zabrany i dodany do ekwipunku gracza. Domyślnie: włączone" />
-		<string id="GLOC_BanditsAlways" text="Bandyci zawsze zabierają ekwipunek" />
-		<string id="GLOC_BanditsAlways_H" text="Bandyci ignorują rzut szansy i zawsze zabierają ekwipunek. Domyślnie: włączone" />
-		<string id="GLOC_HonorableSpares" text="Honorowi porywacze oszczędzają ekwipunek" />
-		<string id="GLOC_HonorableSpares_H" text="Dowódca oddziału porywaczy z dodatnią cechą Honoru nigdy nie zabiera ekwipunku. Domyślnie: włączone" />
-		<string id="GLOC_MercifulSpares" text="Miłosierni porywacze oszczędzają ekwipunek" />
-		<string id="GLOC_MercifulSpares_H" text="Dowódca oddziału porywaczy z dodatnią cechą Miłosierdzia nigdy nie zabiera ekwipunku. Domyślnie: włączone" />
-		<string id="GLOC_DishonorableAlways" text="Niehonorowi porywacze zawsze zabierają ekwipunek" />
-		<string id="GLOC_DishonorableAlways_H" text="Dowódca oddziału porywaczy z ujemną cechą Honoru ignoruje rzut szansy i zawsze zabiera ekwipunek. Domyślnie: włączone" />
-		<string id="GLOC_RelationSpares" text="Przyjaźni porywacze oszczędzają ekwipunek" />
-		<string id="GLOC_RelationSpares_H" text="Dowódca oddziału porywaczy z relacją równą progowi lub wyższą nigdy nie zabiera ekwipunku. Domyślnie: włączone" />
+		<string id="GLOC_BanditsAlways" text="Bandyci zawsze zabierają zbroję" />
+		<string id="GLOC_BanditsAlways_H" text="Bandyci ignorują rzut szansy na utratę zbroi. Domyślnie: włączone" />
+		<string id="GLOC_HonorableSpares" text="Honorowi porywacze oszczędzają zbroję" />
+		<string id="GLOC_HonorableSpares_H" text="Dowódca oddziału porywaczy z dodatnią cechą Honoru nigdy nie zabiera zbroi. Broń i koń są zabierane mimo to. Domyślnie: włączone" />
+		<string id="GLOC_MercifulSpares" text="Miłosierni porywacze oszczędzają zbroję" />
+		<string id="GLOC_MercifulSpares_H" text="Dowódca oddziału porywaczy z dodatnią cechą Miłosierdzia nigdy nie zabiera zbroi. Broń i koń są zabierane mimo to. Domyślnie: włączone" />
+		<string id="GLOC_DishonorableAlways" text="Niehonorowi porywacze zawsze zabierają zbroję" />
+		<string id="GLOC_DishonorableAlways_H" text="Dowódca oddziału porywaczy z ujemną cechą Honoru ignoruje rzut szansy na utratę zbroi. Domyślnie: włączone" />
+		<string id="GLOC_RelationSpares" text="Przyjaźni porywacze oszczędzają zbroję" />
+		<string id="GLOC_RelationSpares_H" text="Dowódca oddziału porywaczy z relacją równą progowi lub wyższą nigdy nie zabiera zbroi. Broń i koń są zabierane mimo to. Domyślnie: włączone" />
 		<string id="GLOC_SpareRelation" text="Próg przyjaznej relacji" />
 		<string id="GLOC_SpareRelation_H" text="Wartość relacji, od której porywacz jest uznawany za przyjaznego. Domyślnie: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="Zabierz cały ekwipunek po egzekucji" />

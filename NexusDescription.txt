@@ -7,15 +7,15 @@
 [img]https://i.ibb.co/FkbLZ6NL/Shackles.png[/img][/center]
 
 [color=#ffff00][size=4]Features[/size][/color]
-[color=#ffd966]When a hero is captured, a gear loss roll is made. If it passes, every equipped item is rolled separately and taken items go to the captor's inventory.[/color]
+[color=#ffd966]Captured heroes always lose their weapons, banner, horse and harness. If the armor roll passes, armor is taken in order: helmet, gloves, cape, then body armor together with boots. The first failed roll stops the stripping. Everything taken goes to the captor's inventory.[/color]
 [color=#93c47d]Stripped heroes are dressed in tattered rags. Heroes released while still in rags receive a fresh vanilla-generated equipment set.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
-[color=#ffd966]Minimum item value filter - cheap items are never taken.[/color]
+[color=#ffd966]Minimum item value filter - cheap armor is never taken.[/color]
 [color=#93c47d]Choose which equipment sets can be taken: Battle, Civilian, Stealth.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color] each)
 [color=#ffd966]Choose who can lose gear: AI heroes, the player, player clan members, player caravan masters.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color] each)
 [color=#93c47d]When you capture a hero, their gear is added to your inventory.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
-[color=#ffd966]Bandits always take gear, ignoring the chance roll.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
-[color=#93c47d]Honorable or Merciful captor leaders never take gear. Dishonorable leaders always do.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color] each)
-[color=#ffd966]Friendly captors spare gear when their relation with the prisoner is at or above an adjustable threshold.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
+[color=#ffd966]Bandits always take armor, ignoring the armor loss chance roll.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
+[color=#93c47d]Honorable or Merciful captor leaders never take armor (weapons and horse are still taken). Dishonorable leaders always do.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color] each)
+[color=#ffd966]Friendly captors spare armor when their relation with the prisoner is at or above an adjustable threshold.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
 [color=#93c47d]When a hero is executed, all their equipment goes to the executioner's party inventory. Works for player and AI executions.[/color] ([color=#6aa84f]on[/color]/[color=#e06666]off[/color])
 [color=#ffd966]Works with or without Mod Configuration Menu.[/color]
 [color=#93c47d]Translations for 12 languages.[/color]
@@ -27,9 +27,9 @@ Want to translate or fix a translation? [color=#93c47d]You have the permission[/
 
 [color=#ffff00][size=4]Settings[/size][/color]
 [color=#6fa8dc]General[/color]
-[color=#ffd966]Gear Loss Chance[/color] - 0% to 100%, default [color=#93c47d]80%[/color] (rolled once per capture)
-[color=#ffd966]Per-Item Loss Chance[/color] - 0% to 100%, default [color=#93c47d]80%[/color] (100% strips everything)
-[color=#ffd966]Minimum Item Value[/color] - 0 to 100000 denars, default [color=#93c47d]200[/color] (0 = no filter)
+[color=#ffd966]Armor Loss Chance[/color] - 0% to 100%, default [color=#93c47d]80%[/color] (rolled once per capture; weapons and horse are always taken)
+[color=#ffd966]Next Armor Piece Chance[/color] - 0% to 100%, default [color=#93c47d]80%[/color] (rolled for each armor step; 100% strips everything)
+[color=#ffd966]Minimum Item Value[/color] - 0 to 100000 denars, default [color=#93c47d]200[/color] (armor only; 0 = no filter)
 [color=#ffd966]Re-equip On Release[/color] - default [color=#6aa84f]on[/color]
 [color=#6fa8dc]Equipment Sets[/color]
 [color=#ffd966]Battle Gear[/color] - default [color=#6aa84f]on[/color]
@@ -42,11 +42,11 @@ Want to translate or fix a translation? [color=#93c47d]You have the permission[/
 [color=#ffd966]Player Caravan Masters[/color] - default [color=#6aa84f]on[/color]
 [color=#6fa8dc]Captor Rules[/color]
 [color=#ffd966]Player Takes Gear As Captor[/color] - default [color=#6aa84f]on[/color]
-[color=#ffd966]Bandits Always Take Gear[/color] - default [color=#6aa84f]on[/color]
-[color=#ffd966]Honorable Captors Spare Gear[/color] - default [color=#6aa84f]on[/color]
-[color=#ffd966]Merciful Captors Spare Gear[/color] - default [color=#6aa84f]on[/color]
-[color=#ffd966]Dishonorable Captors Always Take Gear[/color] - default [color=#6aa84f]on[/color]
-[color=#ffd966]Friendly Captors Spare Gear[/color] - default [color=#6aa84f]on[/color]
+[color=#ffd966]Bandits Always Take Armor[/color] - default [color=#6aa84f]on[/color]
+[color=#ffd966]Honorable Captors Spare Armor[/color] - default [color=#6aa84f]on[/color]
+[color=#ffd966]Merciful Captors Spare Armor[/color] - default [color=#6aa84f]on[/color]
+[color=#ffd966]Dishonorable Captors Always Take Armor[/color] - default [color=#6aa84f]on[/color]
+[color=#ffd966]Friendly Captors Spare Armor[/color] - default [color=#6aa84f]on[/color]
 [color=#ffd966]Friendly Relation Threshold[/color] - -100 to 100, default [color=#93c47d]10[/color]
 [color=#ffd966]Take All Equipment After Execution[/color] - default [color=#6aa84f]on[/color]
 [color=#6fa8dc]Technical settings[/color]

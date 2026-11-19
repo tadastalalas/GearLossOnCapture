@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="Set di equipaggiamento" />
 		<string id="GLOC_Victims" text="Chi perde l'equipaggiamento" />
 		<string id="GLOC_Captors" text="Regole dei rapitori" />
-		<string id="GLOC_Chance" text="Probabilità di perdita dell'equipaggiamento" />
-		<string id="GLOC_Chance_H" text="Probabilità che un eroe catturato perda dell'equipaggiamento. Tirata una volta per cattura. Predefinito: 80%" />
-		<string id="GLOC_SlotChance" text="Probabilità di perdita per oggetto" />
-		<string id="GLOC_SlotChance_H" text="Superato il tiro principale, ogni oggetto equipaggiato viene tirato separatamente. 100% toglie tutto. Predefinito: 80%" />
+		<string id="GLOC_Chance" text="Probabilità di perdita dell'armatura" />
+		<string id="GLOC_Chance_H" text="Armi, stendardo, cavallo e bardatura vengono sempre presi. Questa è la probabilità che il rapitore prenda anche l'armatura. Tirata una volta per cattura. Predefinito: 80%" />
+		<string id="GLOC_SlotChance" text="Probabilità del pezzo di armatura successivo" />
+		<string id="GLOC_SlotChance_H" text="L'armatura viene presa in questo ordine: elmo, guanti, mantello, poi armatura del corpo insieme agli stivali. Ogni passo viene tirato e il primo tiro fallito ferma la spoliazione. 100% toglie tutto. Predefinito: 80%" />
 		<string id="GLOC_MinItemValue" text="Valore minimo dell'oggetto" />
-		<string id="GLOC_MinItemValue_H" text="Gli oggetti di valore inferiore non vengono mai presi. 0 disattiva il filtro. Predefinito: 200" />
+		<string id="GLOC_MinItemValue_H" text="Le armature che valgono meno di questo non vengono mai prese. Armi, stendardo, cavallo e bardatura vengono presi comunque. 0 disattiva il filtro. Predefinito: 200" />
 		<string id="GLOC_ReequipOnRelease" text="Riequipaggia al rilascio" />
 		<string id="GLOC_ReequipOnRelease_H" text="Gli eroi liberati in stracci ricevono un nuovo set di equipaggiamento generato dal gioco. Predefinito: attivo" />
 		<string id="GLOC_LoseBattle" text="Equipaggiamento da battaglia" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="I compagni alla guida delle carovane del giocatore possono perdere l'equipaggiamento. Predefinito: attivo" />
 		<string id="GLOC_PlayerCaptorTakes" text="Il giocatore prende l'equipaggiamento come rapitore" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="Quando il giocatore cattura un eroe, il suo equipaggiamento viene preso e aggiunto all'inventario del giocatore. Predefinito: attivo" />
-		<string id="GLOC_BanditsAlways" text="I banditi prendono sempre l'equipaggiamento" />
-		<string id="GLOC_BanditsAlways_H" text="I banditi ignorano il tiro di probabilità e prendono sempre l'equipaggiamento. Predefinito: attivo" />
-		<string id="GLOC_HonorableSpares" text="I rapitori onorevoli risparmiano l'equipaggiamento" />
-		<string id="GLOC_HonorableSpares_H" text="Un capo del gruppo rapitore con tratto Onore positivo non prende mai l'equipaggiamento. Predefinito: attivo" />
-		<string id="GLOC_MercifulSpares" text="I rapitori misericordiosi risparmiano l'equipaggiamento" />
-		<string id="GLOC_MercifulSpares_H" text="Un capo del gruppo rapitore con tratto Misericordia positivo non prende mai l'equipaggiamento. Predefinito: attivo" />
-		<string id="GLOC_DishonorableAlways" text="I rapitori disonorevoli prendono sempre l'equipaggiamento" />
-		<string id="GLOC_DishonorableAlways_H" text="Un capo del gruppo rapitore con tratto Onore negativo ignora il tiro di probabilità e prende sempre l'equipaggiamento. Predefinito: attivo" />
-		<string id="GLOC_RelationSpares" text="I rapitori amichevoli risparmiano l'equipaggiamento" />
-		<string id="GLOC_RelationSpares_H" text="Un capo del gruppo rapitore con relazione pari o superiore alla soglia non prende mai l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_BanditsAlways" text="I banditi prendono sempre l'armatura" />
+		<string id="GLOC_BanditsAlways_H" text="I banditi ignorano il tiro di probabilità di perdita dell'armatura. Predefinito: attivo" />
+		<string id="GLOC_HonorableSpares" text="I rapitori onorevoli risparmiano l'armatura" />
+		<string id="GLOC_HonorableSpares_H" text="Un capo del gruppo rapitore con tratto Onore positivo non prende mai l'armatura. Armi e cavallo vengono comunque presi. Predefinito: attivo" />
+		<string id="GLOC_MercifulSpares" text="I rapitori misericordiosi risparmiano l'armatura" />
+		<string id="GLOC_MercifulSpares_H" text="Un capo del gruppo rapitore con tratto Misericordia positivo non prende mai l'armatura. Armi e cavallo vengono comunque presi. Predefinito: attivo" />
+		<string id="GLOC_DishonorableAlways" text="I rapitori disonorevoli prendono sempre l'armatura" />
+		<string id="GLOC_DishonorableAlways_H" text="Un capo del gruppo rapitore con tratto Onore negativo ignora il tiro di probabilità di perdita dell'armatura. Predefinito: attivo" />
+		<string id="GLOC_RelationSpares" text="I rapitori amichevoli risparmiano l'armatura" />
+		<string id="GLOC_RelationSpares_H" text="Un capo del gruppo rapitore con relazione pari o superiore alla soglia non prende mai l'armatura. Armi e cavallo vengono comunque presi. Predefinito: attivo" />
 		<string id="GLOC_SpareRelation" text="Soglia di relazione amichevole" />
 		<string id="GLOC_SpareRelation_H" text="Valore di relazione a partire dal quale un rapitore è considerato amichevole. Predefinito: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="Prendi tutto l'equipaggiamento dopo l'esecuzione" />

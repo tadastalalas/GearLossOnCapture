@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="Equipment Sets" />
 		<string id="GLOC_Victims" text="Who Loses Gear" />
 		<string id="GLOC_Captors" text="Captor Rules" />
-		<string id="GLOC_Chance" text="Gear Loss Chance" />
-		<string id="GLOC_Chance_H" text="Chance that a captured hero loses any gear at all. Rolled once per capture. Default: 80%" />
-		<string id="GLOC_SlotChance" text="Per-Item Loss Chance" />
-		<string id="GLOC_SlotChance_H" text="After the main roll passes, each equipped item is rolled separately. 100% strips everything. Default: 80%" />
+		<string id="GLOC_Chance" text="Armor Loss Chance" />
+		<string id="GLOC_Chance_H" text="Weapons, banner, horse and harness are always taken. This is the chance that the captor also takes armor. Rolled once per capture. Default: 80%" />
+		<string id="GLOC_SlotChance" text="Next Armor Piece Chance" />
+		<string id="GLOC_SlotChance_H" text="Armor is taken in this order: helmet, gloves, cape, then body armor together with boots. Each step is rolled and the first failed roll stops the stripping. 100% strips everything. Default: 80%" />
 		<string id="GLOC_MinItemValue" text="Minimum Item Value" />
-		<string id="GLOC_MinItemValue_H" text="Items worth less than this are never taken. 0 disables the filter. Default: 200" />
+		<string id="GLOC_MinItemValue_H" text="Armor worth less than this is never taken. Weapons, banner, horse and harness are taken regardless. 0 disables the filter. Default: 200" />
 		<string id="GLOC_ReequipOnRelease" text="Re-equip On Release" />
 		<string id="GLOC_ReequipOnRelease_H" text="Heroes freed while wearing rags receive a fresh vanilla-generated equipment set. Default: true" />
 		<string id="GLOC_LoseBattle" text="Battle Gear" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="Companions leading player caravans can lose gear. Default: true" />
 		<string id="GLOC_PlayerCaptorTakes" text="Player Takes Gear As Captor" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="When the player captures a hero, their gear is taken and added to the player inventory. Default: true" />
-		<string id="GLOC_BanditsAlways" text="Bandits Always Take Gear" />
-		<string id="GLOC_BanditsAlways_H" text="Bandit captors ignore the chance roll and always take gear. Default: true" />
-		<string id="GLOC_HonorableSpares" text="Honorable Captors Spare Gear" />
-		<string id="GLOC_HonorableSpares_H" text="Captor party leader with positive Honor trait never takes gear. Default: true" />
-		<string id="GLOC_MercifulSpares" text="Merciful Captors Spare Gear" />
-		<string id="GLOC_MercifulSpares_H" text="Captor party leader with positive Mercy trait never takes gear. Default: true" />
-		<string id="GLOC_DishonorableAlways" text="Dishonorable Captors Always Take Gear" />
-		<string id="GLOC_DishonorableAlways_H" text="Captor party leader with negative Honor trait ignores the chance roll and always takes gear. Default: true" />
-		<string id="GLOC_RelationSpares" text="Friendly Captors Spare Gear" />
-		<string id="GLOC_RelationSpares_H" text="Captor party leader with relation at or above the threshold never takes gear. Default: true" />
+		<string id="GLOC_BanditsAlways" text="Bandits Always Take Armor" />
+		<string id="GLOC_BanditsAlways_H" text="Bandit captors ignore the armor loss chance roll. Default: true" />
+		<string id="GLOC_HonorableSpares" text="Honorable Captors Spare Armor" />
+		<string id="GLOC_HonorableSpares_H" text="Captor party leader with positive Honor trait never takes armor. Weapons and horse are still taken. Default: true" />
+		<string id="GLOC_MercifulSpares" text="Merciful Captors Spare Armor" />
+		<string id="GLOC_MercifulSpares_H" text="Captor party leader with positive Mercy trait never takes armor. Weapons and horse are still taken. Default: true" />
+		<string id="GLOC_DishonorableAlways" text="Dishonorable Captors Always Take Armor" />
+		<string id="GLOC_DishonorableAlways_H" text="Captor party leader with negative Honor trait ignores the armor loss chance roll. Default: true" />
+		<string id="GLOC_RelationSpares" text="Friendly Captors Spare Armor" />
+		<string id="GLOC_RelationSpares_H" text="Captor party leader with relation at or above the threshold never takes armor. Weapons and horse are still taken. Default: true" />
 		<string id="GLOC_SpareRelation" text="Friendly Relation Threshold" />
 		<string id="GLOC_SpareRelation_H" text="Relation value at which a captor is considered friendly. Default: 10" />
 		<string id="GLOC_ExecutionTakesAll" text="Take All Equipment After Execution" />

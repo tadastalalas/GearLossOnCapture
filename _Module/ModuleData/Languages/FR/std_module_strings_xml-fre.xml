@@ -9,12 +9,12 @@
 		<string id="GLOC_Sets" text="Jeux d'équipement" />
 		<string id="GLOC_Victims" text="Qui perd son équipement" />
 		<string id="GLOC_Captors" text="Règles des ravisseurs" />
-		<string id="GLOC_Chance" text="Chance de perte d'équipement" />
-		<string id="GLOC_Chance_H" text="Chance qu'un héros capturé perde de l'équipement. Tirée une fois par capture. Par défaut : 80%" />
-		<string id="GLOC_SlotChance" text="Chance de perte par objet" />
-		<string id="GLOC_SlotChance_H" text="Si le tirage principal réussit, chaque objet équipé est tiré séparément. 100% retire tout. Par défaut : 80%" />
+		<string id="GLOC_Chance" text="Chance de perte d'armure" />
+		<string id="GLOC_Chance_H" text="Les armes, la bannière, le cheval et le harnais sont toujours pris. Ceci est la chance que le ravisseur prenne aussi l'armure. Tirée une fois par capture. Par défaut : 80%" />
+		<string id="GLOC_SlotChance" text="Chance de la pièce d'armure suivante" />
+		<string id="GLOC_SlotChance_H" text="L'armure est prise dans cet ordre : casque, gants, cape, puis armure de corps avec les bottes. Chaque étape est tirée et le premier tirage raté arrête le dépouillement. 100% retire tout. Par défaut : 80%" />
 		<string id="GLOC_MinItemValue" text="Valeur minimale de l'objet" />
-		<string id="GLOC_MinItemValue_H" text="Les objets valant moins que cette somme ne sont jamais pris. 0 désactive le filtre. Par défaut : 200" />
+		<string id="GLOC_MinItemValue_H" text="Les armures valant moins que ce montant ne sont jamais prises. Les armes, la bannière, le cheval et le harnais sont pris quoi qu'il arrive. 0 désactive le filtre. Par défaut : 200" />
 		<string id="GLOC_ReequipOnRelease" text="Rééquiper à la libération" />
 		<string id="GLOC_ReequipOnRelease_H" text="Les héros libérés en haillons reçoivent un nouveau jeu d'équipement généré par le jeu. Par défaut : activé" />
 		<string id="GLOC_LoseBattle" text="Équipement de combat" />
@@ -33,16 +33,16 @@
 		<string id="GLOC_PlayerCaravanMasters_H" text="Les compagnons menant les caravanes du joueur peuvent perdre leur équipement. Par défaut : activé" />
 		<string id="GLOC_PlayerCaptorTakes" text="Le joueur prend l'équipement en tant que ravisseur" />
 		<string id="GLOC_PlayerCaptorTakes_H" text="Quand le joueur capture un héros, son équipement est pris et ajouté à l'inventaire du joueur. Par défaut : activé" />
-		<string id="GLOC_BanditsAlways" text="Les bandits prennent toujours l'équipement" />
-		<string id="GLOC_BanditsAlways_H" text="Les bandits ignorent le tirage de chance et prennent toujours l'équipement. Par défaut : activé" />
-		<string id="GLOC_HonorableSpares" text="Les ravisseurs honorables épargnent l'équipement" />
-		<string id="GLOC_HonorableSpares_H" text="Un chef de groupe ravisseur avec un trait Honneur positif ne prend jamais l'équipement. Par défaut : activé" />
-		<string id="GLOC_MercifulSpares" text="Les ravisseurs cléments épargnent l'équipement" />
-		<string id="GLOC_MercifulSpares_H" text="Un chef de groupe ravisseur avec un trait Clémence positif ne prend jamais l'équipement. Par défaut : activé" />
-		<string id="GLOC_DishonorableAlways" text="Les ravisseurs déshonorables prennent toujours l'équipement" />
-		<string id="GLOC_DishonorableAlways_H" text="Un chef de groupe ravisseur avec un trait Honneur négatif ignore le tirage de chance et prend toujours l'équipement. Par défaut : activé" />
-		<string id="GLOC_RelationSpares" text="Les ravisseurs amicaux épargnent l'équipement" />
-		<string id="GLOC_RelationSpares_H" text="Un chef de groupe ravisseur dont la relation atteint ou dépasse le seuil ne prend jamais l'équipement. Par défaut : activé" />
+		<string id="GLOC_BanditsAlways" text="Les bandits prennent toujours l'armure" />
+		<string id="GLOC_BanditsAlways_H" text="Les bandits ignorent le tirage de chance de perte d'armure. Par défaut : activé" />
+		<string id="GLOC_HonorableSpares" text="Les ravisseurs honorables épargnent l'armure" />
+		<string id="GLOC_HonorableSpares_H" text="Un chef de groupe ravisseur avec un trait Honneur positif ne prend jamais l'armure. Les armes et le cheval sont quand même pris. Par défaut : activé" />
+		<string id="GLOC_MercifulSpares" text="Les ravisseurs miséricordieux épargnent l'armure" />
+		<string id="GLOC_MercifulSpares_H" text="Un chef de groupe ravisseur avec un trait Miséricorde positif ne prend jamais l'armure. Les armes et le cheval sont quand même pris. Par défaut : activé" />
+		<string id="GLOC_DishonorableAlways" text="Les ravisseurs déshonorables prennent toujours l'armure" />
+		<string id="GLOC_DishonorableAlways_H" text="Un chef de groupe ravisseur avec un trait Honneur négatif ignore le tirage de chance de perte d'armure. Par défaut : activé" />
+		<string id="GLOC_RelationSpares" text="Les ravisseurs amicaux épargnent l'armure" />
+		<string id="GLOC_RelationSpares_H" text="Un chef de groupe ravisseur avec une relation égale ou supérieure au seuil ne prend jamais l'armure. Les armes et le cheval sont quand même pris. Par défaut : activé" />
 		<string id="GLOC_SpareRelation" text="Seuil de relation amicale" />
 		<string id="GLOC_SpareRelation_H" text="Valeur de relation à partir de laquelle un ravisseur est considéré comme amical. Par défaut : 10" />
 		<string id="GLOC_ExecutionTakesAll" text="Prendre tout l'équipement après exécution" />

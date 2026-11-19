@@ -1,3 +1,11 @@
+GLOC v1.5.7.1 :
+
+- Captured heroes now always lose their weapons, banner, horse and harness.
+- Armor is no longer taken at random. It is taken in this order: helmet, gloves, cape, then body armor together with boots. The first failed roll stops the stripping.
+	"Gear Loss Chance" is now "Armor Loss Chance" and "Per-Item Loss Chance" is now "Next Armor Piece Chance" (General, both default 80%).
+	"Minimum Item Value" now applies to armor only.
+- Honorable, Merciful and Friendly captors now spare only armor. Their prisoners still lose weapons and horse. Bandit and Dishonorable captor settings now say "Armor" instead of "Gear".
+
 GLOC v1.5.7.0 :
 
 - Updated for game version 1.5.7. Game versions 1.5.7, 1.4.8 and 1.4.7 are supported in one download.

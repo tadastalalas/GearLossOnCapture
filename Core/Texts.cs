@@ -14,12 +14,12 @@ internal static class Texts
         public const string ModName = "{=GLOC_DisplayName}Gear Loss On Capture";
 
         public const string GroupGeneral = "{=GLOC_General}General";
-        public const string Chance = "{=GLOC_Chance}Gear Loss Chance";
-        public const string ChanceHint = "{=GLOC_Chance_H}Chance that a captured hero loses any gear at all. Rolled once per capture. Default: 80%";
-        public const string SlotChance = "{=GLOC_SlotChance}Per-Item Loss Chance";
-        public const string SlotChanceHint = "{=GLOC_SlotChance_H}After the main roll passes, each equipped item is rolled separately. 100% strips everything. Default: 80%";
+        public const string Chance = "{=GLOC_Chance}Armor Loss Chance";
+        public const string ChanceHint = "{=GLOC_Chance_H}Weapons, banner, horse and harness are always taken. This is the chance that the captor also takes armor. Rolled once per capture. Default: 80%";
+        public const string SlotChance = "{=GLOC_SlotChance}Next Armor Piece Chance";
+        public const string SlotChanceHint = "{=GLOC_SlotChance_H}Armor is taken in this order: helmet, gloves, cape, then body armor together with boots. Each step is rolled and the first failed roll stops the stripping. 100% strips everything. Default: 80%";
         public const string MinItemValue = "{=GLOC_MinItemValue}Minimum Item Value";
-        public const string MinItemValueHint = "{=GLOC_MinItemValue_H}Items worth less than this are never taken. 0 disables the filter. Default: 200";
+        public const string MinItemValueHint = "{=GLOC_MinItemValue_H}Armor worth less than this is never taken. Weapons, banner, horse and harness are taken regardless. 0 disables the filter. Default: 200";
         public const string ReequipOnRelease = "{=GLOC_ReequipOnRelease}Re-equip On Release";
         public const string ReequipOnReleaseHint = "{=GLOC_ReequipOnRelease_H}Heroes freed while wearing rags receive a fresh vanilla-generated equipment set. Default: true";
 
@@ -44,16 +44,16 @@ internal static class Texts
         public const string GroupCaptors = "{=GLOC_Captors}Captor Rules";
         public const string PlayerCaptorTakes = "{=GLOC_PlayerCaptorTakes}Player Takes Gear As Captor";
         public const string PlayerCaptorTakesHint = "{=GLOC_PlayerCaptorTakes_H}When the player captures a hero, their gear is taken and added to the player inventory. Default: true";
-        public const string BanditsAlways = "{=GLOC_BanditsAlways}Bandits Always Take Gear";
-        public const string BanditsAlwaysHint = "{=GLOC_BanditsAlways_H}Bandit captors ignore the chance roll and always take gear. Default: true";
-        public const string HonorableSpares = "{=GLOC_HonorableSpares}Honorable Captors Spare Gear";
-        public const string HonorableSparesHint = "{=GLOC_HonorableSpares_H}Captor party leader with positive Honor trait never takes gear. Default: true";
-        public const string MercifulSpares = "{=GLOC_MercifulSpares}Merciful Captors Spare Gear";
-        public const string MercifulSparesHint = "{=GLOC_MercifulSpares_H}Captor party leader with positive Mercy trait never takes gear. Default: true";
-        public const string DishonorableAlways = "{=GLOC_DishonorableAlways}Dishonorable Captors Always Take Gear";
-        public const string DishonorableAlwaysHint = "{=GLOC_DishonorableAlways_H}Captor party leader with negative Honor trait ignores the chance roll and always takes gear. Default: true";
-        public const string RelationSpares = "{=GLOC_RelationSpares}Friendly Captors Spare Gear";
-        public const string RelationSparesHint = "{=GLOC_RelationSpares_H}Captor party leader with relation at or above the threshold never takes gear. Default: true";
+        public const string BanditsAlways = "{=GLOC_BanditsAlways}Bandits Always Take Armor";
+        public const string BanditsAlwaysHint = "{=GLOC_BanditsAlways_H}Bandit captors ignore the armor loss chance roll. Default: true";
+        public const string HonorableSpares = "{=GLOC_HonorableSpares}Honorable Captors Spare Armor";
+        public const string HonorableSparesHint = "{=GLOC_HonorableSpares_H}Captor party leader with positive Honor trait never takes armor. Weapons and horse are still taken. Default: true";
+        public const string MercifulSpares = "{=GLOC_MercifulSpares}Merciful Captors Spare Armor";
+        public const string MercifulSparesHint = "{=GLOC_MercifulSpares_H}Captor party leader with positive Mercy trait never takes armor. Weapons and horse are still taken. Default: true";
+        public const string DishonorableAlways = "{=GLOC_DishonorableAlways}Dishonorable Captors Always Take Armor";
+        public const string DishonorableAlwaysHint = "{=GLOC_DishonorableAlways_H}Captor party leader with negative Honor trait ignores the armor loss chance roll. Default: true";
+        public const string RelationSpares = "{=GLOC_RelationSpares}Friendly Captors Spare Armor";
+        public const string RelationSparesHint = "{=GLOC_RelationSpares_H}Captor party leader with relation at or above the threshold never takes armor. Weapons and horse are still taken. Default: true";
         public const string SpareRelation = "{=GLOC_SpareRelation}Friendly Relation Threshold";
         public const string SpareRelationHint = "{=GLOC_SpareRelation_H}Relation value at which a captor is considered friendly. Default: 10";
         public const string ExecutionTakesAll = "{=GLOC_ExecutionTakesAll}Take All Equipment After Execution";
