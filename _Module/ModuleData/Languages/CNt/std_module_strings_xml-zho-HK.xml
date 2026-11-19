@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="繁體中文" />
+	</tags>
+	<strings>
+		<string id="GLOC_DisplayName" text="俘虜失去裝備" />
+		<string id="GLOC_General" text="一般" />
+		<string id="GLOC_Sets" text="裝備套組" />
+		<string id="GLOC_Victims" text="誰會失去裝備" />
+		<string id="GLOC_Captors" text="俘獲方規則" />
+		<string id="GLOC_Chance" text="失去裝備機率" />
+		<string id="GLOC_Chance_H" text="被俘英雄失去任何裝備的機率。每次被俘只判定一次。[ 預設：80% ]" />
+		<string id="GLOC_SlotChance" text="單件物品失去機率" />
+		<string id="GLOC_SlotChance_H" text="通過主判定後，每件已裝備的物品會各自單獨判定。100% 則全部剝光。[ 預設：80% ]" />
+		<string id="GLOC_MinItemValue" text="物品最低價值" />
+		<string id="GLOC_MinItemValue_H" text="價值低於此數值的物品永遠不會被奪走。0 為停用此過濾。[ 預設：200 ]" />
+		<string id="GLOC_ReequipOnRelease" text="獲釋時重新配發裝備" />
+		<string id="GLOC_ReequipOnRelease_H" text="身穿破衣被釋放的英雄，會獲得一套由遊戲原版機制生成的新裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_LoseBattle" text="戰鬥裝備" />
+		<string id="GLOC_LoseBattle_H" text="戰鬥裝備套組可能被奪走。[ 預設：啟用 ]" />
+		<string id="GLOC_LoseCivilian" text="平民裝備" />
+		<string id="GLOC_LoseCivilian_H" text="平民裝備套組可能被奪走。[ 預設：停用 ]" />
+		<string id="GLOC_LoseStealth" text="潛行裝備" />
+		<string id="GLOC_LoseStealth_H" text="潛行裝備套組可能被奪走。[ 預設：停用 ]" />
+		<string id="GLOC_AI" text="AI 英雄" />
+		<string id="GLOC_AI_H" text="玩家家族以外的英雄可能失去裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_Player" text="玩家" />
+		<string id="GLOC_Player_H" text="玩家角色可能失去裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_PlayerClan" text="玩家家族成員" />
+		<string id="GLOC_PlayerClan_H" text="玩家家族中的家人與同伴可能失去裝備。不包括商隊首領。[ 預設：啟用 ]" />
+		<string id="GLOC_PlayerCaravanMasters" text="玩家商隊首領" />
+		<string id="GLOC_PlayerCaravanMasters_H" text="率領玩家商隊的同伴可能失去裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_PlayerCaptorTakes" text="玩家作為俘獲方時奪取裝備" />
+		<string id="GLOC_PlayerCaptorTakes_H" text="玩家俘虜英雄時，會奪走其裝備並放入玩家的物品欄。[ 預設：啟用 ]" />
+		<string id="GLOC_BanditsAlways" text="強盜必定奪取裝備" />
+		<string id="GLOC_BanditsAlways_H" text="身為俘獲方的強盜不受機率判定影響，必定奪取裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_HonorableSpares" text="高尚的俘獲方不奪取裝備" />
+		<string id="GLOC_HonorableSpares_H" text="榮譽特質為正的俘獲方部隊首領絕不奪取裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_MercifulSpares" text="仁慈的俘獲方不奪取裝備" />
+		<string id="GLOC_MercifulSpares_H" text="仁慈特質為正的俘獲方部隊首領絕不奪取裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_DishonorableAlways" text="卑劣的俘獲方必定奪取裝備" />
+		<string id="GLOC_DishonorableAlways_H" text="榮譽特質為負的俘獲方部隊首領不受機率判定影響，必定奪取裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_RelationSpares" text="友好的俘獲方不奪取裝備" />
+		<string id="GLOC_RelationSpares_H" text="與被俘者關係達到或超過門檻的俘獲方部隊首領，絕不奪取裝備。[ 預設：啟用 ]" />
+		<string id="GLOC_SpareRelation" text="友好關係門檻" />
+		<string id="GLOC_SpareRelation_H" text="關係值達到多少時，俘獲方才算友好。[ 預設：10 ]" />
+		<string id="GLOC_ExecutionTakesAll" text="處決後奪取全部裝備" />
+		<string id="GLOC_ExecutionTakesAll_H" text="英雄被處決時，其戰鬥、平民與潛行三套裝備套組中的所有物品，都會進入處決者的部隊庫存。玩家與 AI 的處決都適用。[ 預設：啟用 ]" />
+		<string id="GLOC_Tq4mZ8r" text="技術設定" />
+		<string id="GLOC_b7XkN2w" text="除錯日誌" />
+		<string id="GLOC_R5hVc9e" text="除錯日誌（僅限英文）。[ 預設：停用 ]" />
+	</strings>
+</base>

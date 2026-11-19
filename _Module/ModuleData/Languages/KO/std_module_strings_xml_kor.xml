@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="한국어" />
+	</tags>
+	<strings>
+		<string id="GLOC_DisplayName" text="포로가 되면 장비 상실" />
+		<string id="GLOC_General" text="일반" />
+		<string id="GLOC_Sets" text="장비 세트" />
+		<string id="GLOC_Victims" text="장비를 잃는 대상" />
+		<string id="GLOC_Captors" text="포획자 규칙" />
+		<string id="GLOC_Chance" text="장비 상실 확률" />
+		<string id="GLOC_Chance_H" text="포로가 된 영웅이 장비를 잃을 확률. 포획마다 한 번 판정됩니다. 기본값: 80%" />
+		<string id="GLOC_SlotChance" text="아이템별 상실 확률" />
+		<string id="GLOC_SlotChance_H" text="기본 판정에 성공하면 착용 중인 각 아이템을 개별적으로 판정합니다. 100%면 모두 빼앗깁니다. 기본값: 80%" />
+		<string id="GLOC_MinItemValue" text="최소 아이템 가치" />
+		<string id="GLOC_MinItemValue_H" text="이 가치보다 낮은 아이템은 절대 빼앗기지 않습니다. 0이면 필터가 비활성화됩니다. 기본값: 200" />
+		<string id="GLOC_ReequipOnRelease" text="석방 시 재장비" />
+		<string id="GLOC_ReequipOnRelease_H" text="누더기를 입은 채 석방된 영웅은 게임이 생성한 새 장비 세트를 받습니다. 기본값: 켜짐" />
+		<string id="GLOC_LoseBattle" text="전투 장비" />
+		<string id="GLOC_LoseBattle_H" text="전투 장비 세트를 빼앗길 수 있습니다. 기본값: 켜짐" />
+		<string id="GLOC_LoseCivilian" text="민간 장비" />
+		<string id="GLOC_LoseCivilian_H" text="민간 장비 세트를 빼앗길 수 있습니다. 기본값: 꺼짐" />
+		<string id="GLOC_LoseStealth" text="은신 장비" />
+		<string id="GLOC_LoseStealth_H" text="은신 장비 세트를 빼앗길 수 있습니다. 기본값: 꺼짐" />
+		<string id="GLOC_AI" text="AI 영웅" />
+		<string id="GLOC_AI_H" text="플레이어 가문 외의 영웅이 장비를 잃을 수 있습니다. 기본값: 켜짐" />
+		<string id="GLOC_Player" text="플레이어" />
+		<string id="GLOC_Player_H" text="플레이어 캐릭터가 장비를 잃을 수 있습니다. 기본값: 켜짐" />
+		<string id="GLOC_PlayerClan" text="플레이어 가문 구성원" />
+		<string id="GLOC_PlayerClan_H" text="플레이어 가문의 가족과 동료가 장비를 잃을 수 있습니다. 대상단 단장은 포함되지 않습니다. 기본값: 켜짐" />
+		<string id="GLOC_PlayerCaravanMasters" text="플레이어 대상단 단장" />
+		<string id="GLOC_PlayerCaravanMasters_H" text="플레이어의 대상단을 이끄는 동료가 장비를 잃을 수 있습니다. 기본값: 켜짐" />
+		<string id="GLOC_PlayerCaptorTakes" text="플레이어가 포획자로서 장비 획득" />
+		<string id="GLOC_PlayerCaptorTakes_H" text="플레이어가 영웅을 포로로 잡으면 그 장비를 빼앗아 플레이어 인벤토리에 추가합니다. 기본값: 켜짐" />
+		<string id="GLOC_BanditsAlways" text="산적은 항상 장비를 빼앗음" />
+		<string id="GLOC_BanditsAlways_H" text="산적 포획자는 확률 판정을 무시하고 항상 장비를 빼앗습니다. 기본값: 켜짐" />
+		<string id="GLOC_HonorableSpares" text="명예로운 포획자는 장비를 남겨둠" />
+		<string id="GLOC_HonorableSpares_H" text="명예 특성이 양수인 포획 부대의 지도자는 장비를 절대 빼앗지 않습니다. 기본값: 켜짐" />
+		<string id="GLOC_MercifulSpares" text="자비로운 포획자는 장비를 남겨둠" />
+		<string id="GLOC_MercifulSpares_H" text="자비 특성이 양수인 포획 부대의 지도자는 장비를 절대 빼앗지 않습니다. 기본값: 켜짐" />
+		<string id="GLOC_DishonorableAlways" text="불명예스러운 포획자는 항상 장비를 빼앗음" />
+		<string id="GLOC_DishonorableAlways_H" text="명예 특성이 음수인 포획 부대의 지도자는 확률 판정을 무시하고 항상 장비를 빼앗습니다. 기본값: 켜짐" />
+		<string id="GLOC_RelationSpares" text="우호적인 포획자는 장비를 남겨둠" />
+		<string id="GLOC_RelationSpares_H" text="관계도가 기준치 이상인 포획 부대의 지도자는 장비를 절대 빼앗지 않습니다. 기본값: 켜짐" />
+		<string id="GLOC_SpareRelation" text="우호 관계 기준치" />
+		<string id="GLOC_SpareRelation_H" text="포획자가 우호적으로 간주되는 관계도 값. 기본값: 10" />
+		<string id="GLOC_ExecutionTakesAll" text="처형 후 모든 장비 획득" />
+		<string id="GLOC_ExecutionTakesAll_H" text="영웅이 처형되면 전투, 평상, 은신 장비 세트의 모든 아이템이 처형자 부대의 인벤토리로 들어갑니다. 플레이어와 AI의 처형 모두에 적용됩니다. 기본값: true" />
+		<string id="GLOC_Tq4mZ8r" text="기술 설정" />
+		<string id="GLOC_b7XkN2w" text="디버깅을 위한 로깅" />
+		<string id="GLOC_R5hVc9e" text="디버깅을 위한 로깅(영어 전용). 기본값: 꺼짐" />
+	</strings>
+</base>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModConfiguration>
+    <General>
+        <Chance>0.8</Chance>
+        <SlotChance>0.8</SlotChance>
+        <MinItemValue>200</MinItemValue>
+        <ReequipOnRelease>true</ReequipOnRelease>
+    </General>
+    <EquipmentSets>
+        <LoseBattle>true</LoseBattle>
+        <LoseCivilian>false</LoseCivilian>
+        <LoseStealth>false</LoseStealth>
+    </EquipmentSets>
+    <WhoLosesGear>
+        <AI>true</AI>
+        <Player>true</Player>
+        <PlayerClan>true</PlayerClan>
+        <PlayerCaravanMasters>true</PlayerCaravanMasters>
+    </WhoLosesGear>
+    <CaptorRules>
+        <PlayerCaptorTakes>true</PlayerCaptorTakes>
+        <BanditsAlways>true</BanditsAlways>
+        <HonorableSpares>true</HonorableSpares>
+        <MercifulSpares>true</MercifulSpares>
+        <DishonorableAlways>true</DishonorableAlways>
+        <RelationSpares>true</RelationSpares>
+        <SpareRelation>10</SpareRelation>
+        <ExecutionTakesAll>true</ExecutionTakesAll>
+    </CaptorRules>
+    <TechnicalSettings>
+        <LoggingEnabled>false</LoggingEnabled>
+    </TechnicalSettings>
+</ModConfiguration>

@@ -1,0 +1,6 @@
+GLOC v1.5.7.0 :
+
+- Updated for game version 1.5.7. Game versions 1.5.7, 1.4.8 and 1.4.7 are supported in one download.
+- MCM is no longer a hard requirement. If MCM is not installed, use the ModConfiguration.xml file in the mod folder to configure the mod.
+- Added "Logging for debugging" setting (Technical settings, default: off). The log file is written to Modules\GearLossOnCapture\logs.
+- Simplified Chinese and Traditional Chinese translations merged/added by Cartoonist57.

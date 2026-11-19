@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Italiano" />
+	</tags>
+	<strings>
+		<string id="GLOC_DisplayName" text="Perdita dell'equipaggiamento alla cattura" />
+		<string id="GLOC_General" text="Generale" />
+		<string id="GLOC_Sets" text="Set di equipaggiamento" />
+		<string id="GLOC_Victims" text="Chi perde l'equipaggiamento" />
+		<string id="GLOC_Captors" text="Regole dei rapitori" />
+		<string id="GLOC_Chance" text="Probabilità di perdita dell'equipaggiamento" />
+		<string id="GLOC_Chance_H" text="Probabilità che un eroe catturato perda dell'equipaggiamento. Tirata una volta per cattura. Predefinito: 80%" />
+		<string id="GLOC_SlotChance" text="Probabilità di perdita per oggetto" />
+		<string id="GLOC_SlotChance_H" text="Superato il tiro principale, ogni oggetto equipaggiato viene tirato separatamente. 100% toglie tutto. Predefinito: 80%" />
+		<string id="GLOC_MinItemValue" text="Valore minimo dell'oggetto" />
+		<string id="GLOC_MinItemValue_H" text="Gli oggetti di valore inferiore non vengono mai presi. 0 disattiva il filtro. Predefinito: 200" />
+		<string id="GLOC_ReequipOnRelease" text="Riequipaggia al rilascio" />
+		<string id="GLOC_ReequipOnRelease_H" text="Gli eroi liberati in stracci ricevono un nuovo set di equipaggiamento generato dal gioco. Predefinito: attivo" />
+		<string id="GLOC_LoseBattle" text="Equipaggiamento da battaglia" />
+		<string id="GLOC_LoseBattle_H" text="Il set da battaglia può essere preso. Predefinito: attivo" />
+		<string id="GLOC_LoseCivilian" text="Equipaggiamento civile" />
+		<string id="GLOC_LoseCivilian_H" text="Il set civile può essere preso. Predefinito: disattivo" />
+		<string id="GLOC_LoseStealth" text="Equipaggiamento furtivo" />
+		<string id="GLOC_LoseStealth_H" text="Il set furtivo può essere preso. Predefinito: disattivo" />
+		<string id="GLOC_AI" text="Eroi IA" />
+		<string id="GLOC_AI_H" text="Gli eroi fuori dal clan del giocatore possono perdere l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_Player" text="Giocatore" />
+		<string id="GLOC_Player_H" text="Il personaggio del giocatore può perdere l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_PlayerClan" text="Membri del clan del giocatore" />
+		<string id="GLOC_PlayerClan_H" text="Famiglia e compagni del clan del giocatore possono perdere l'equipaggiamento. Esclude i capocarovana. Predefinito: attivo" />
+		<string id="GLOC_PlayerCaravanMasters" text="Capocarovana del giocatore" />
+		<string id="GLOC_PlayerCaravanMasters_H" text="I compagni alla guida delle carovane del giocatore possono perdere l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_PlayerCaptorTakes" text="Il giocatore prende l'equipaggiamento come rapitore" />
+		<string id="GLOC_PlayerCaptorTakes_H" text="Quando il giocatore cattura un eroe, il suo equipaggiamento viene preso e aggiunto all'inventario del giocatore. Predefinito: attivo" />
+		<string id="GLOC_BanditsAlways" text="I banditi prendono sempre l'equipaggiamento" />
+		<string id="GLOC_BanditsAlways_H" text="I banditi ignorano il tiro di probabilità e prendono sempre l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_HonorableSpares" text="I rapitori onorevoli risparmiano l'equipaggiamento" />
+		<string id="GLOC_HonorableSpares_H" text="Un capo del gruppo rapitore con tratto Onore positivo non prende mai l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_MercifulSpares" text="I rapitori misericordiosi risparmiano l'equipaggiamento" />
+		<string id="GLOC_MercifulSpares_H" text="Un capo del gruppo rapitore con tratto Misericordia positivo non prende mai l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_DishonorableAlways" text="I rapitori disonorevoli prendono sempre l'equipaggiamento" />
+		<string id="GLOC_DishonorableAlways_H" text="Un capo del gruppo rapitore con tratto Onore negativo ignora il tiro di probabilità e prende sempre l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_RelationSpares" text="I rapitori amichevoli risparmiano l'equipaggiamento" />
+		<string id="GLOC_RelationSpares_H" text="Un capo del gruppo rapitore con relazione pari o superiore alla soglia non prende mai l'equipaggiamento. Predefinito: attivo" />
+		<string id="GLOC_SpareRelation" text="Soglia di relazione amichevole" />
+		<string id="GLOC_SpareRelation_H" text="Valore di relazione a partire dal quale un rapitore è considerato amichevole. Predefinito: 10" />
+		<string id="GLOC_ExecutionTakesAll" text="Prendi tutto l'equipaggiamento dopo l'esecuzione" />
+		<string id="GLOC_ExecutionTakesAll_H" text="Quando un eroe viene giustiziato, ogni oggetto dei set da battaglia, civile e furtivo va nell'inventario del gruppo dell'esecutore. Vale per le esecuzioni del giocatore e dell'IA. Predefinito: true" />
+		<string id="GLOC_Tq4mZ8r" text="Impostazioni tecniche" />
+		<string id="GLOC_b7XkN2w" text="Registrazione per il debug" />
+		<string id="GLOC_R5hVc9e" text="Registrazione per il debug (solo in inglese). Predefinito: disattivo" />
+	</strings>
+</base>

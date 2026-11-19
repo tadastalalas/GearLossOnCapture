@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Français" />
+	</tags>
+	<strings>
+		<string id="GLOC_DisplayName" text="Perte d'équipement à la capture" />
+		<string id="GLOC_General" text="Général" />
+		<string id="GLOC_Sets" text="Jeux d'équipement" />
+		<string id="GLOC_Victims" text="Qui perd son équipement" />
+		<string id="GLOC_Captors" text="Règles des ravisseurs" />
+		<string id="GLOC_Chance" text="Chance de perte d'équipement" />
+		<string id="GLOC_Chance_H" text="Chance qu'un héros capturé perde de l'équipement. Tirée une fois par capture. Par défaut : 80%" />
+		<string id="GLOC_SlotChance" text="Chance de perte par objet" />
+		<string id="GLOC_SlotChance_H" text="Si le tirage principal réussit, chaque objet équipé est tiré séparément. 100% retire tout. Par défaut : 80%" />
+		<string id="GLOC_MinItemValue" text="Valeur minimale de l'objet" />
+		<string id="GLOC_MinItemValue_H" text="Les objets valant moins que cette somme ne sont jamais pris. 0 désactive le filtre. Par défaut : 200" />
+		<string id="GLOC_ReequipOnRelease" text="Rééquiper à la libération" />
+		<string id="GLOC_ReequipOnRelease_H" text="Les héros libérés en haillons reçoivent un nouveau jeu d'équipement généré par le jeu. Par défaut : activé" />
+		<string id="GLOC_LoseBattle" text="Équipement de combat" />
+		<string id="GLOC_LoseBattle_H" text="Le jeu d'équipement de combat peut être pris. Par défaut : activé" />
+		<string id="GLOC_LoseCivilian" text="Équipement civil" />
+		<string id="GLOC_LoseCivilian_H" text="Le jeu d'équipement civil peut être pris. Par défaut : désactivé" />
+		<string id="GLOC_LoseStealth" text="Équipement furtif" />
+		<string id="GLOC_LoseStealth_H" text="Le jeu d'équipement furtif peut être pris. Par défaut : désactivé" />
+		<string id="GLOC_AI" text="Héros IA" />
+		<string id="GLOC_AI_H" text="Les héros hors du clan du joueur peuvent perdre leur équipement. Par défaut : activé" />
+		<string id="GLOC_Player" text="Joueur" />
+		<string id="GLOC_Player_H" text="Le personnage du joueur peut perdre son équipement. Par défaut : activé" />
+		<string id="GLOC_PlayerClan" text="Membres du clan du joueur" />
+		<string id="GLOC_PlayerClan_H" text="La famille et les compagnons du clan du joueur peuvent perdre leur équipement. N'inclut pas les maîtres de caravane. Par défaut : activé" />
+		<string id="GLOC_PlayerCaravanMasters" text="Maîtres de caravane du joueur" />
+		<string id="GLOC_PlayerCaravanMasters_H" text="Les compagnons menant les caravanes du joueur peuvent perdre leur équipement. Par défaut : activé" />
+		<string id="GLOC_PlayerCaptorTakes" text="Le joueur prend l'équipement en tant que ravisseur" />
+		<string id="GLOC_PlayerCaptorTakes_H" text="Quand le joueur capture un héros, son équipement est pris et ajouté à l'inventaire du joueur. Par défaut : activé" />
+		<string id="GLOC_BanditsAlways" text="Les bandits prennent toujours l'équipement" />
+		<string id="GLOC_BanditsAlways_H" text="Les bandits ignorent le tirage de chance et prennent toujours l'équipement. Par défaut : activé" />
+		<string id="GLOC_HonorableSpares" text="Les ravisseurs honorables épargnent l'équipement" />
+		<string id="GLOC_HonorableSpares_H" text="Un chef de groupe ravisseur avec un trait Honneur positif ne prend jamais l'équipement. Par défaut : activé" />
+		<string id="GLOC_MercifulSpares" text="Les ravisseurs cléments épargnent l'équipement" />
+		<string id="GLOC_MercifulSpares_H" text="Un chef de groupe ravisseur avec un trait Clémence positif ne prend jamais l'équipement. Par défaut : activé" />
+		<string id="GLOC_DishonorableAlways" text="Les ravisseurs déshonorables prennent toujours l'équipement" />
+		<string id="GLOC_DishonorableAlways_H" text="Un chef de groupe ravisseur avec un trait Honneur négatif ignore le tirage de chance et prend toujours l'équipement. Par défaut : activé" />
+		<string id="GLOC_RelationSpares" text="Les ravisseurs amicaux épargnent l'équipement" />
+		<string id="GLOC_RelationSpares_H" text="Un chef de groupe ravisseur dont la relation atteint ou dépasse le seuil ne prend jamais l'équipement. Par défaut : activé" />
+		<string id="GLOC_SpareRelation" text="Seuil de relation amicale" />
+		<string id="GLOC_SpareRelation_H" text="Valeur de relation à partir de laquelle un ravisseur est considéré comme amical. Par défaut : 10" />
+		<string id="GLOC_ExecutionTakesAll" text="Prendre tout l'équipement après exécution" />
+		<string id="GLOC_ExecutionTakesAll_H" text="Lorsqu'un héros est exécuté, tous les objets des ensembles de combat, civil et furtif vont dans l'inventaire du groupe de l'exécuteur. S'applique aux exécutions du joueur et de l'IA. Par défaut : true" />
+		<string id="GLOC_Tq4mZ8r" text="Paramètres techniques" />
+		<string id="GLOC_b7XkN2w" text="Journalisation pour le débogage" />
+		<string id="GLOC_R5hVc9e" text="Journalisation pour le débogage (anglais uniquement). Par défaut : désactivé" />
+	</strings>
+</base>
